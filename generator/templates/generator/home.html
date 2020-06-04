@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}../static/css/style.css">
+        <script src="{{ STATIC_URL }}../static/js/showresult.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                 <!-- HEADER -->
+                <div class="header">
+                    <h1>Password Generator</h1>
+                </div>
+                <!-- FORM -->
+                <div class="form-wrapper">
+                    <div class="form-content">
+                        <form action="" method="GET">
+                             <div class="input-checkbox">
+                                 <div class="for-uppercase">
+                                    <input type="checkbox" name="uppercase"> UPPERCASE
+                                 </div>
+                                 <div class="for-numbers">
+                                    <input type="checkbox" name="numbers"> NUMBERS
+                                 </div>
+                                 <div class="for-chars">
+                                    <input type="checkbox" name="special-chars"> SPECIAL CHARACTERS
+                                 </div>
+                             </div>
+                            <div class="select">
+                                <select name="length" id="">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8" selected="selected">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <div class="input-submit">
+                                <button  onclick="show()" >Generate Password</button>
+                            </div>
+                        </form>
+                        <div id="result" >
+                            {{ password }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

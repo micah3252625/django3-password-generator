@@ -1,0 +1,40 @@
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    height:100%;
+    width:100%;
+    margin:0;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    border: solid 5px black;
+    position: absolute;
+	top: 20%;
+	left: 32%;
+	width: 30%;
+	margin: auto;
+	height: 500px;
+}
+.header {
+    border: 1px solid red;
+    width: 60%;
+    margin: auto;
+}
+.header h1 {
+    text-align: center;
+}
+.form-wrapper {
+    border: 1px solid blue;
+    height: 350px;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+}
+
+.form-content {
+    border: 2px solid green;
+    height: 100%;
+}
+
